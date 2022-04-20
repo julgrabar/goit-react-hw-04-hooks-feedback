@@ -12,13 +12,12 @@ const App = () => {
   const [neutral, setNeutral] = useState(0);
 
   const onButtonClick = event => {
-    console.log(event.target.name);
     switch (event.target.name) {
       case 'good':
         setGood(prev => prev + 1);
         break;
 
-      case 'bed':
+      case 'bad':
         setBad(prev => prev + 1);
         break;
 
