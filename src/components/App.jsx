@@ -4,8 +4,6 @@ import { Statistics } from './Statistics/Statistics';
 import { FeedbackOptions } from './Feedback options/FeedbackOptions';
 import { Notification } from './Notification/Notification';
 
-export { Component } from 'react';
-
 const App = () => {
   const [good, setGood] = useState(0);
   const [bad, setBad] = useState(0);
