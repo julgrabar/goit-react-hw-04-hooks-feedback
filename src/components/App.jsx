@@ -28,6 +28,8 @@ const App = () => {
     }
   };
 
+  const options = ['good', 'neutral', 'bad'];
+
   const countTotalFeedback = () => {
     const sum = bad + neutral + good;
     return sum;
@@ -43,7 +45,7 @@ const App = () => {
   return (
     <div>
       <Section title="Please leave feedback">
-        <FeedbackOptions onLeaveFeedback={onButtonClick} />
+        <FeedbackOptions options={options} onLeaveFeedback={onButtonClick} />
       </Section>
 
       <Section title="Statistics">
